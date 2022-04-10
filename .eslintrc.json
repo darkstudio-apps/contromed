@@ -1,3 +1,45 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "next/core-web-vitals"
+  ],
+  "rules": {
+    "no-trailing-spaces": "warn",
+    "semi": [
+      "warn",
+      "never"
+    ],
+    "quotes": [
+      "warn",
+      "double"
+    ],
+    "jsx-quotes": [
+      "warn",
+      "prefer-double"
+    ],
+    "comma-dangle": [
+      "warn",
+      "always-multiline"
+    ],
+    "no-multiple-empty-lines": [
+      "warn",
+      {
+        "max": 1,
+        "maxEOF": 0
+      }
+    ],
+    "eol-last": [
+      "warn",
+      "always"
+    ],
+    "no-console": [
+      "warn",
+      {
+        "allow": [
+          "warn",
+          "error"
+        ]
+      }
+    ]
+  }
 }
