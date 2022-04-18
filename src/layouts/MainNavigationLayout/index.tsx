@@ -1,13 +1,15 @@
-import { ReactNode } from "react"
+import { ReactNode } from "react";
+import { MenuNavigation } from "./MenuNavigation";
 
 interface MainNavigationLayoutProps {
-  children: ReactNode
+  children: ReactNode;
 }
 
 export function MainNavigationLayout({ children }: MainNavigationLayoutProps) {
   return (
-    // Toolbar
-    <main>{children}</main>
-    // MenuNavigation
-  )
+    <>
+      <main>{children}</main>
+      <MenuNavigation />
+    </>
+  );
 }

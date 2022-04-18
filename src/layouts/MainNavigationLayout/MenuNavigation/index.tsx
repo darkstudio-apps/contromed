@@ -1,11 +1,16 @@
-import { ReactNode } from "react"
+import DrugsPillAddPlus from "assets/icons/DrugsPillAddPlus";
+import { ReactNode } from "react";
 
 interface IMenuNavigation {
-  children: ReactNode
+  children: ReactNode;
 }
 
-export function MenuNavigation({ children }: IMenuNavigation) {
+export function MenuNavigation() {
   return (
-    <div>{children}</div>
-  )
+    <div>
+      <div>
+        <DrugsPillAddPlus />
+      </div>
+    </div>
+  );
 }
