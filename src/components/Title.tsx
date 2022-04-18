@@ -1,5 +1,7 @@
+import { Heading } from "@chakra-ui/react"
+
 export function Title({ children }: any) {
   return (
-    <h1>{children}</h1>
+    <Heading color={"blue"}>{children}</Heading>
   )
 }
