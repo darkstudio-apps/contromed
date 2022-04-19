@@ -33,7 +33,7 @@ const navItems = [
 
 export function MenuNavigation() {
   return (
-    <Flex width="100%" justifyContent="space-around" position="fixed">
+    <Flex width="100%" justifyContent="space-around">
       {navItems.map(({ href, icon, label }, index) => (
         <LinkNext key={index} href={href} passHref>
           <Link display="flex" alignItems="center" flexDir="column">

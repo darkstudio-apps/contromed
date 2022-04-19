@@ -1,11 +1,11 @@
 import { ReactNode } from "react"
 
 interface IToolbar {
-  children: ReactNode
+  children?: ReactNode
 }
 
-export function Toolbar({ children }: IToolbar) {
+export function Toolbar({ }: IToolbar) {
   return (
-    <div>{children}</div>
+    <div>Toolar</div>
   )
 }
