@@ -1,14 +1,12 @@
-import { Flex, Link } from "@chakra-ui/react";
-import DrugsPillAddPlus from "assets/icons/DrugsPillAddPlus";
-import DrugsPillClock from "assets/icons/DrugsPillClock";
-import HealthDocumentNotesCheckmark from "assets/icons/HealthDocumentNotesCheckmark";
-import MenssageChatHeartbeat from "assets/icons/MenssageChatHeartbeat";
-import LinkNext from "next/link";
-import { ReactNode } from "react";
+import { Flex, Link } from "@chakra-ui/react"
+import DrugsPillAddPlus from "assets/icons/DrugsPillAddPlus"
+import DrugsPillClock from "assets/icons/DrugsPillClock"
+import HealthDocumentNotesCheckmark from "assets/icons/HealthDocumentNotesCheckmark"
+import MenssageChatHeartbeat from "assets/icons/MenssageChatHeartbeat"
+import LinkNext from "next/link"
 
-interface IMenuNavigation {
-  children: ReactNode;
-}
+// interface IMenuNavigation {
+// }
 
 const navItems = [
   {
@@ -31,7 +29,7 @@ const navItems = [
     icon: <HealthDocumentNotesCheckmark />,
     label: "Receitas",
   },
-];
+]
 
 export function MenuNavigation() {
   return (
@@ -45,5 +43,5 @@ export function MenuNavigation() {
         </LinkNext>
       ))}
     </Flex>
-  );
+  )
 }
