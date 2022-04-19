@@ -1,4 +1,4 @@
-export default function FolderMedicalCardCross() {
+export default function HealthDocumentNotesCheckmark() {
   return (
     <svg
       width="24"

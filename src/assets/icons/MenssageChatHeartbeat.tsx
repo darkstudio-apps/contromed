@@ -1,4 +1,4 @@
-export default function FolderMedicalCardCross() {
+export default function MenssageChatHeartbeat() {
   return (
     <svg
       width="24"
