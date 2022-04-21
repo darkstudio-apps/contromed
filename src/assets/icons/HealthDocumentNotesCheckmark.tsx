@@ -1,4 +1,4 @@
-export default function HealthDocumentNotesCheckmark() {
+export function HealthDocumentNotesCheckmark() {
   return (
     <svg
       width="24"
@@ -54,5 +54,5 @@ export default function HealthDocumentNotesCheckmark() {
         strokeLinejoin="round"
       />
     </svg>
-  );
+  )
 }

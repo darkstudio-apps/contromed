@@ -1,4 +1,4 @@
-export default function MenssageChatHeartbeat() {
+export function MenssageChatHeartbeat() {
   return (
     <svg
       width="24"
@@ -24,5 +24,5 @@ export default function MenssageChatHeartbeat() {
         strokeLinejoin="round"
       />
     </svg>
-  );
+  )
 }

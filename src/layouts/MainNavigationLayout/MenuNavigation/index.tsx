@@ -1,8 +1,5 @@
 import { Flex, Link } from "@chakra-ui/react"
-import DrugsPillAddPlus from "assets/icons/DrugsPillAddPlus"
-import DrugsPillClock from "assets/icons/DrugsPillClock"
-import HealthDocumentNotesCheckmark from "assets/icons/HealthDocumentNotesCheckmark"
-import MenssageChatHeartbeat from "assets/icons/MenssageChatHeartbeat"
+import {DrugsPillAddPlus, DrugsPillClock, MenssageChatHeartbeat} from "assets/icons"
 import LinkNext from "next/link"
 
 // interface IMenuNavigation {
@@ -24,11 +21,6 @@ const navItems = [
     icon: <MenssageChatHeartbeat />,
     label: "Pressão",
   },
-  {
-    href: "/recipe",
-    icon: <HealthDocumentNotesCheckmark />,
-    label: "Receitas",
-  },
 ]
 
 export function MenuNavigation() {
@@ -37,11 +29,12 @@ export function MenuNavigation() {
       width="100%"
       height="var(--menu-navigation-height)"
       justifyContent="space-around"
-      backgroundColor="red"
+      alignItems="center"
+      backgroundColor="white"
     >
       {navItems.map(({ href, icon, label }, index) => (
         <LinkNext key={index} href={href} passHref>
-          <Link display="flex" alignItems="center" flexDir="column">
+          <Link display="flex" alignItems="center" gap="0.25rem"  flexDir="column">
             {icon}
             <span>{label}</span>
           </Link>

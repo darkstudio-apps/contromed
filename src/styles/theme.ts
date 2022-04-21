@@ -2,10 +2,9 @@ import { extendTheme } from "@chakra-ui/react"
 
 // TODO: Setar as cores e fonts do projeto
 const colors = {
-  brand: {
-    900: "#1a365d",
-    800: "#153e75",
-    700: "#2a69ac",
+  "menu-navigation": {
+    color: "#A7B4A4",
+    "accent-color": "#185716",
   },
 }
 

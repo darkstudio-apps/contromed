@@ -1,4 +1,4 @@
-export default function DrugsPillClock() {
+export function DrugsPillClock() {
   return (
     <svg
       width="24"
@@ -38,5 +38,5 @@ export default function DrugsPillClock() {
         strokeLinejoin="round"
       />
     </svg>
-  );
+  )
 }

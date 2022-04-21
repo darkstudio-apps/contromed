@@ -1,4 +1,4 @@
-export default function FolderMedicalCardCross() {
+export function FolderMedicalCardCross({}) {
   return (
     <svg
       width="24"
@@ -45,5 +45,5 @@ export default function FolderMedicalCardCross() {
         strokeLinejoin="round"
       />
     </svg>
-  );
+  )
 }
