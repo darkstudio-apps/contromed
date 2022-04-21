@@ -1,9 +1,9 @@
-import { Box, Flex, Link } from "@chakra-ui/react";
-import DrugsPillAddPlus from "assets/icons/DrugsPillAddPlus";
-import DrugsPillClock from "assets/icons/DrugsPillClock";
-import HealthDocumentNotesCheckmark from "assets/icons/HealthDocumentNotesCheckmark";
-import MenssageChatHeartbeat from "assets/icons/MenssageChatHeartbeat";
-import LinkNext from "next/link";
+import { Flex, Link } from "@chakra-ui/react"
+import DrugsPillAddPlus from "assets/icons/DrugsPillAddPlus"
+import DrugsPillClock from "assets/icons/DrugsPillClock"
+import HealthDocumentNotesCheckmark from "assets/icons/HealthDocumentNotesCheckmark"
+import MenssageChatHeartbeat from "assets/icons/MenssageChatHeartbeat"
+import LinkNext from "next/link"
 
 // interface IMenuNavigation {
 // }
@@ -29,24 +29,24 @@ const navItems = [
     icon: <HealthDocumentNotesCheckmark />,
     label: "Receitas",
   },
-];
+]
 
 export function MenuNavigation() {
   return (
     <Flex
-      width={"100%"}
-      justifyContent={"space-around"}
-      backgroundColor={"red"}
-      padding={"0.5rem 0"}
+      width="100%"
+      height="var(--menu-navigation-height)"
+      justifyContent="space-around"
+      backgroundColor="red"
     >
       {navItems.map(({ href, icon, label }, index) => (
         <LinkNext key={index} href={href} passHref>
-          <Link display={"flex"} alignItems={"center"} flexDir={"column"}>
+          <Link display="flex" alignItems="center" flexDir="column">
             {icon}
             <span>{label}</span>
           </Link>
         </LinkNext>
       ))}
     </Flex>
-  );
+  )
 }

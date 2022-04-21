@@ -1,25 +1,25 @@
-import { ReactNode } from "react";
-import { Flex } from "@chakra-ui/react";
-import { MenuNavigation } from "./MenuNavigation";
-import { Toolbar } from "./Toolbar";
+import { ReactNode } from "react"
+import { Box } from "@chakra-ui/react"
+import { MenuNavigation } from "./MenuNavigation"
+import { Header } from "./Header"
 
 interface MainNavigationLayoutProps {
-  children: ReactNode;
+  children: ReactNode
 }
 
 export function MainNavigationLayout({ children }: MainNavigationLayoutProps) {
   return (
-    <Flex width="100%" height="100vh" direction="column">
-      <Toolbar />
-      <Flex
+    <Box width="100%" height="100vh">
+      <Header />
+      <Box
         as="main"
-        height="calc(100vh - 104)"
+        width="100%"
+        height="calc(100vh - var(--header-height) - var(--menu-navigation-height))"
         overflowY="scroll"
-        flexGrow={1}
       >
         {children}
-      </Flex>
+      </Box>
       <MenuNavigation />
-    </Flex>
-  );
+    </Box>
+  )
 }
