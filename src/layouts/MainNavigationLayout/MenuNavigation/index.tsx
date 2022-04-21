@@ -1,4 +1,4 @@
-import { Flex, Link } from "@chakra-ui/react";
+import { Box, Flex, Link } from "@chakra-ui/react";
 import DrugsPillAddPlus from "assets/icons/DrugsPillAddPlus";
 import DrugsPillClock from "assets/icons/DrugsPillClock";
 import HealthDocumentNotesCheckmark from "assets/icons/HealthDocumentNotesCheckmark";
@@ -36,9 +36,8 @@ export function MenuNavigation() {
     <Flex
       width={"100%"}
       justifyContent={"space-around"}
-      position={"sticky"}
-      bottom={"0"}
-      backgroundColor={"white"}
+      backgroundColor={"red"}
+      padding={"0.5rem 0"}
     >
       {navItems.map(({ href, icon, label }, index) => (
         <LinkNext key={index} href={href} passHref>

@@ -1,11 +1,14 @@
-import { ReactNode } from "react"
+import { Flex } from "@chakra-ui/react";
+import { ReactNode } from "react";
 
 interface IToolbar {
-  children?: ReactNode
+  children?: ReactNode;
 }
 
-export function Toolbar({ }: IToolbar) {
+export function Toolbar({}: IToolbar) {
   return (
-    <div>Toolar</div>
-  )
+    <Flex width={"100%"} padding={"0.5rem 0"} background={"red"}>
+      Ola maria
+    </Flex>
+  );
 }
