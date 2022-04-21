@@ -1,4 +1,7 @@
 :root {
   --header-height: 72px;
+
   --menu-navigation-height: 64px;
+  --menu-navigation-color: '#A7B4A4';
+  --menu-navigation-accent-color: '#185716';
 }
