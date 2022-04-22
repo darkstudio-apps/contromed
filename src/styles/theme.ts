@@ -1,15 +1,26 @@
 import { extendTheme, withDefaultColorScheme } from "@chakra-ui/react"
 
-// TODO: Setar as cores e fonts do projeto
-
 export const theme = extendTheme(
   {
+    styles: {
+      global: {
+        body: {
+          bg: "backgroundApp",
+          color: "green.900",
+        },
+      },
+    },
+    fonts: {
+      body: "Inter, sans-serif",
+      heading: "Inter, sans-serif",
+    },
     colors: {
       primary: "#024907",
       secondary: "#263124",
       darkGray: "#211D28",
       border: "#474053",
       neutral: "#F0FFEF",
+      backgroundApp: "#FFFFFF",
       green: {
         900: "#004402",
         800: "#185716",
