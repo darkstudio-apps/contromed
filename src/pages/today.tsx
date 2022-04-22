@@ -1,5 +1,7 @@
+import { Button } from "@chakra-ui/react"
+
 export default function Today() {
   return (
-    <h1>Today</h1>
+    <Button>Today</Button>
   )
 }

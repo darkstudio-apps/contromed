@@ -1,6 +1,7 @@
 import { extendTheme, withDefaultColorScheme } from "@chakra-ui/react"
 
 export const theme = extendTheme(
+  withDefaultColorScheme({ colorScheme: "green" }),
   {
     styles: {
       global: {
@@ -46,6 +47,28 @@ export const theme = extendTheme(
         50: "#E9F8E6",
       },
     },
-  },
-  withDefaultColorScheme({ colorScheme: "green" })
+    components: {
+      Button: {
+        baseStyle: {
+          width: "100%",
+          fontWeight: "bold",
+        },
+        sizes: {
+          md: {
+            fontSize: "md",
+            py: 6,
+          },
+        },
+        variants: {
+          solid: {
+            bg: "primary",
+          },
+          outline: {
+            borderColor: "primary",
+            color: "primary",
+          },
+        },
+      },
+    },
+  }
 )

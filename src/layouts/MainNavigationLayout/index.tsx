@@ -16,7 +16,7 @@ export function MainNavigationLayout({ children }: MainNavigationLayoutProps) {
         width="100%"
         height="calc(100vh - var(--header-height) - var(--menu-navigation-height))"
         overflowY="scroll"
-        padding="24px 24px 0"
+        padding="16px 16px 0"
       >
         {children}
       </Box>
