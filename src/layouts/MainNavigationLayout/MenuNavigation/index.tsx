@@ -1,4 +1,4 @@
-import { Flex, Link } from "@chakra-ui/react"
+import { Flex, Link, Text } from "@chakra-ui/react"
 import {DrugsPillAddPlus, DrugsPillClock, MenssageChatHeartbeat} from "assets/icons"
 import LinkNext from "next/link"
 
@@ -36,7 +36,7 @@ export function MenuNavigation() {
         <LinkNext key={index} href={href} passHref>
           <Link display="flex" alignItems="center" gap="0.25rem"  flexDir="column">
             {icon}
-            <span>{label}</span>
+            <Text>{label}</Text>
           </Link>
         </LinkNext>
       ))}
