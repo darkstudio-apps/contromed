@@ -1,9 +1,15 @@
 import { Title } from "components/Title"
-import { Stack } from "@chakra-ui/react"
+import { Button, Input, Stack } from "@chakra-ui/react"
 
 export default function Home() {
   return (
-    <Stack spacing={20}>
+    <Stack spacing={10}>
+      <Input />
+      <Button>Teste</Button>
+      <Title>Home</Title>
+      <Title>Home</Title>
+      <Title>Home</Title>
+      <Title>Home</Title>
       <Title>Home</Title>
       <Title>Home</Title>
       <Title>Home</Title>
